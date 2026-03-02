@@ -25,12 +25,14 @@ body {
     var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .page {
   max-width: 100%;
   margin: 0;
   padding: 24px 32px 56px;
+  width: 100%;
 }
 
 a {
@@ -73,6 +75,7 @@ a {
   display: flex;
   gap: 16px;
   font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .nav__links a {
@@ -467,6 +470,9 @@ a {
 
   .nav {
     position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .nav__links {
@@ -488,5 +494,9 @@ a {
   .timeline__keywords {
     border-left: none;
     padding-left: 0;
+  }
+
+  .page {
+    padding: 16px 16px 40px;
   }
 }

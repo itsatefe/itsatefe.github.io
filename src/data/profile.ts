@@ -5,16 +5,21 @@ export const profile = {
   email: "atefe.rajabi.78@gmail.com",
   github: "https://github.com/itsatefe",
   linkedin: "https://linkedin.com/in/atefe-rajabi78",
-  summary:
-    "AI Backend Developer with 3+ years building and deploying scalable analytics and ML systems in cloud environments. Strong in FastAPI, Node.js, SQL/NoSQL, containerized deployments, and LLM integrations.",
+  summary: `I build AI-driven systems that translate ideas into usable products. I'm motivated by creating tools that improve decision-making and reduce unnecessary complexity.
+
+I adapt quickly to new technologies and enjoy learning by building. I'm comfortable working in evolving environments where experimentation and iteration are part of the process. I approach problems analytically and creatively, and I stay persistent until I understand the root cause, especially when debugging complex systems.
+
+I'm particularly interested in product-focused teams that integrate AI into meaningful applications rather than treating technology as an end in itself.
+
+Beyond my work, I'm curious about different cultures and perspectives. Learning languages and engaging with international environments has always been important to me, both personally and professionally.`,
 };
 
 export const experiences = [
   {
     role: "Applied AI & Full-Stack Engineer",
-    company: "ShortPartners — B2B Investment & M&A Platform",
+    company: "ShortPartners - B2B Investment & M&A Platform",
     location: "Sydney (Remote)",
-    period: "Aug 2025 – Feb 2026",
+    period: "Aug 2025 - Feb 2026",
     brief: "Led GCP analytics systems and LLM pipelines for M&A workflows.",
     keywords: ["GCP", "FastAPI", "LLMs", "Cloud Run", "Docker", "Firestore"],
     bullets: [
@@ -29,7 +34,7 @@ export const experiences = [
     role: "Research Assistant (Artificial Intelligence)",
     company: "Shiraz University",
     location: "Shiraz",
-    period: "Sep 2023 – 2025",
+    period: "Sep 2023 - 2025",
     brief: "Benchmarked ML models and productionized research with FastAPI.",
     keywords: ["FastAPI", "ML Evaluation", "Cloud Scheduler", "Dash"],
     bullets: [
@@ -43,7 +48,7 @@ export const experiences = [
     role: "Freelance AI & Software Developer",
     company: "Remote",
     location: "Remote",
-    period: "Jun 2021 – Sep 2023",
+    period: "Jun 2021 - Sep 2023",
     brief: "Delivered NLP/ML services and applied ML to business workflows.",
     keywords: ["NLP", "REST APIs", "ML", "Analytics"],
     bullets: [
@@ -53,10 +58,10 @@ export const experiences = [
     ],
   },
   {
-    role: "Junior Back-End Developer",
+    role: "Back-End Developer",
     company: "TebOnco",
     location: "Remote",
-    period: "Sep 2020 – Jun 2021",
+    period: "Sep 2020 - Jun 2021",
     brief: "Optimized healthcare APIs and database performance.",
     keywords: ["REST APIs", "SQL", "Caching", "Testing"],
     bullets: [
@@ -87,13 +92,13 @@ export const projects = [
       "End-to-end pipeline on 67K+ reviews; preprocessing, tokenization, model training, and error analysis.",
   },
   {
-    title: "Time-Series Forecasting — Tehran Stock Exchange",
+    title: "Time-Series Forecasting - Tehran Stock Exchange",
     stack: ["Python", "RNN"],
     detail:
       "Designed, trained, and evaluated RNNs for temporal forecasting with normalization and sequence generation.",
   },
   {
-    title: "Blind Source Separation (Audio & Image) — VAE",
+    title: "Blind Source Separation (Audio & Image) - VAE",
     stack: ["PyTorch", "VAE"],
     detail:
       "Learned latent representations to separate mixed audio/image signals.",
@@ -123,6 +128,17 @@ export const skills = {
     "Docker",
     "Kubernetes",
   ],
+  soft: [
+    "Creative Problem Solving",
+    "Clear Communication",
+    "Team Collaboration",
+    "Ownership Mindset",
+    "Adaptability",
+    "Fast Learner",
+    "Adaptable to Fast-paced Environments",
+    "Attention to Detail",
+    "Industriousness",
+  ],
   data: [
     "SQL/NoSQL",
     "BigQuery",
@@ -141,19 +157,56 @@ export const education = [
   {
     degree: "MSc in Artificial Intelligence",
     school: "Shiraz University",
-    period: "2023 – 2025",
+    period: "2023 - 2025",
     details: [
       "Advanced AI coursework and research focus.",
       "Applied machine learning and deep learning methodologies.",
     ],
+    courses: [
+      "Optimization Algorithms",
+      "Deep Learning",
+      "Machine Learning",
+      "Mathematics in AI",
+      "Research Methods",
+    ],
+    finalProject: {
+      title: "Thesis",
+      bullets: [
+        "An interpretable causal discovery algorithm",
+        "Neural flows",
+        "Kolmogorov-Arnold networks",
+      ],
+    },
   },
   {
     degree: "BSc in Software Engineering",
     school: "Persian Gulf University",
-    period: "2017 – 2021",
+    period: "2017 - 2021",
     details: [
       "Core software engineering foundations and systems design.",
       "Project-based coursework in web and backend development.",
+    ],
+    courses: [
+      "Internet Engineering (Full-Stack Development)",
+      "Reinforcement Learning",
+      "Neural Networks",
+      "Data Mining",
+      "Natural Language Processing",
+    ],
+    finalProject: {
+      title: "Final Project",
+      bullets: [
+        "Movie Recommendation System Website",
+        "Recommender Systems",
+        "KNNs",
+        "Full Stack Development",
+        "Asp .NET MVC",
+        "HTML, CSS, jQuery, Bootstrap",
+      ],
+    },
+    awards: [
+      "Exceptional Talented Student Award",
+      "First Rank Student Award",
     ],
   },
 ];

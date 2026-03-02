@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Hero } from "./components/Hero";
-import { SectionShell } from "./components/SectionShell";
-import { ExperienceTimeline } from "./components/ExperienceTimeline";
-import { ProjectGrid } from "./components/ProjectGrid";
-import { SkillsCloud } from "./components/SkillsCloud";
-import { ContactBar } from "./components/ContactBar";
+import { Link, Route, Routes } from "react-router-dom";
 import { profile } from "./data/profile";
-import { EducationList } from "./components/EducationList";
+import { HomePage } from "./pages/HomePage";
+import { ExperiencePage } from "./pages/ExperiencePage";
+import { EducationPage } from "./pages/EducationPage";
+import { ProjectsPage } from "./pages/ProjectsPage";
+import { ContactPage } from "./pages/ContactPage";
+import { SkillsPage } from "./pages/SkillsPage";
 import "./index.css";
 
 export default function App() {
@@ -15,9 +15,9 @@ export default function App() {
   return (
     <div className="page">
       <nav className="nav">
-        <a href="#top" className="nav__brand">
+        <Link to="/" className="nav__brand" onClick={() => setMenuOpen(false)}>
           {profile.name}
-        </a>
+        </Link>
         <button
           type="button"
           className="nav__toggle"
@@ -30,45 +30,41 @@ export default function App() {
           <span />
         </button>
         <div className={`nav__links ${menuOpen ? "nav__links--open" : ""}`}>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
+          <Link to="/experience" onClick={() => setMenuOpen(false)}>
+            Experience
+          </Link>
+          <Link to="/education" onClick={() => setMenuOpen(false)}>
+            Education
+          </Link>
+          <Link to="/projects" onClick={() => setMenuOpen(false)}>
+            Projects
+          </Link>
+          <Link to="/skills" onClick={() => setMenuOpen(false)}>
+            Skills
+          </Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            Contact
+          </Link>
         </div>
       </nav>
 
-      <Hero />
-
-      <main className="layout">
-        <div className="layout__main">
-          <SectionShell id="experience" headline="Experience" eyebrow="Career">
-            <ExperienceTimeline />
-          </SectionShell>
-
-          <SectionShell id="education" headline="Education" eyebrow="Academics">
-            <EducationList />
-          </SectionShell>
-
-          <SectionShell id="projects" headline="Projects" eyebrow="Selected Work">
-            <ProjectGrid />
-          </SectionShell>
-        </div>
-
-        <aside className="layout__sidebar" id="skills">
-          <SectionShell id="skills" headline="Skills" eyebrow="Core Strengths">
-            <SkillsCloud />
-          </SectionShell>
-        </aside>
-      </main>
-
-      <ContactBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/education" element={<EducationPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
 
       <footer className="footer">
         <span>
-          © {new Date().getFullYear()} {profile.name}
+          (c) {new Date().getFullYear()} {profile.name}
         </span>
-        <a href="#top">Back to top ↑</a>
       </footer>
     </div>
   );

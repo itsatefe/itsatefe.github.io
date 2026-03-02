@@ -6,6 +6,16 @@
     <title>Atefe Rajabi | AI Backend Developer</title>
     <meta name="description" content="AI Backend Developer portfolio. Cloud-native ML pipelines, APIs, and systems." />
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <script>
+      (function () {
+        var hash = window.location.hash;
+        var prefix = "#redirect=";
+        if (hash && hash.indexOf(prefix) === 0) {
+          var target = decodeURIComponent(hash.slice(prefix.length));
+          window.history.replaceState(null, "", target);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

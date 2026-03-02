@@ -49,10 +49,7 @@ export function ExperienceTimeline() {
 
       {active && (
         <div className="modal" role="dialog" aria-modal="true">
-          <div
-            className="modal__backdrop"
-            onClick={() => setActiveIndex(null)}
-          />
+          <div className="modal__backdrop" onClick={() => setActiveIndex(null)} />
           <div className="modal__panel" role="document">
             <div className="modal__header">
               <div>
@@ -66,12 +63,12 @@ export function ExperienceTimeline() {
                 onClick={() => setActiveIndex(null)}
                 aria-label="Close experience details"
               >
-                ×
+                x
               </button>
             </div>
             <ul>
-              {active.bullets.map((b) => (
-                <li key={b}>{b}</li>
+              {active.bullets.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
               ))}
             </ul>
           </div>

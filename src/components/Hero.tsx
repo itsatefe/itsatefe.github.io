@@ -1,5 +1,7 @@
 import { profile } from "../data/profile";
 import portrait from "../assets/1752263902402.jpg";
+import { Link } from "react-router-dom";
+import { splitParagraphs } from "../utils/text";
 
 export function Hero() {
   return (
@@ -11,19 +13,23 @@ export function Hero() {
         <div className="hero__text">
           <p className="eyebrow">AI Backend Developer</p>
           <h1>{profile.name}</h1>
-          <p className="hero__lede">{profile.summary}</p>
+          <div className="hero__lede">
+            {splitParagraphs(profile.summary).map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
           <div className="hero__chips">
             <span>{profile.location}</span>
             <span>Cloud-native ML and APIs</span>
             <span>3+ yrs experience</span>
           </div>
           <div className="hero__cta">
-            <a className="btn primary" href="#contact">
+            <Link className="btn primary" to="/contact">
               Contact
-            </a>
-            <a className="btn ghost" href="#projects">
+            </Link>
+            <Link className="btn ghost" to="/projects">
               Projects
-            </a>
+            </Link>
           </div>
         </div>
       </div>

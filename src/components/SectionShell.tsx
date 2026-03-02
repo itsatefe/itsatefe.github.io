@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 
-type Props = PropsWithChildren<{ id: string; headline: string; eyebrow?: string }>;
+type Props = PropsWithChildren<{ id?: string; headline: string; eyebrow?: string }>;
 
 export function SectionShell({ id, headline, eyebrow, children }: Props) {
   return (

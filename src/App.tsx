@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Hero } from "./components/Hero";
 import { SectionShell } from "./components/SectionShell";
 import { ExperienceTimeline } from "./components/ExperienceTimeline";
@@ -9,13 +10,26 @@ import { EducationList } from "./components/EducationList";
 import "./index.css";
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="page">
       <nav className="nav">
         <a href="#top" className="nav__brand">
           {profile.name}
         </a>
-        <div className="nav__links">
+        <button
+          type="button"
+          className="nav__toggle"
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <div className={`nav__links ${menuOpen ? "nav__links--open" : ""}`}>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>

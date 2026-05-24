@@ -1,7 +1,7 @@
 export const profile = {
   name: "Atefe Rajabi",
   title: "AI Backend Developer",
-  location: "Istanbul, Turkiye",
+  location: "Yerevan, Armenia",
   email: "atefe.rajabi.78@gmail.com",
   github: "https://github.com/itsatefe",
   linkedin: "https://linkedin.com/in/atefe-rajabi78",

@@ -80,7 +80,7 @@ export const contactContent: ContactContent = {
   availability: [
     {
       label: "Timezone",
-      value: "GMT+3 (Istanbul)",
+      value: "GMT+4 (Armenia)",
     },
     {
       label: "Response time",

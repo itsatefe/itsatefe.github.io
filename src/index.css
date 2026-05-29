@@ -67,7 +67,6 @@ a {
   border-radius: 14px;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.85);
-  position: sticky;
   overflow: visible;
 }
 
@@ -114,6 +113,12 @@ a {
 
 .nav__links a:hover {
   background: rgba(15, 23, 42, 0.06);
+}
+
+.nav__links a.active {
+  background: rgba(29, 78, 216, 0.1);
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .hero {
@@ -584,7 +589,7 @@ a {
 }
 
 .btn {
-  padding: 5px 5px;
+  padding: 8px 20px;
   border-radius: 12px;
   border: 1px solid transparent;
   font-weight: 600;
@@ -680,6 +685,51 @@ a {
   color: var(--accent);
 }
 
+.badge-available {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.badge-available::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.project-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.project-card__type {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(29, 78, 216, 0.08);
+  color: var(--accent);
+  border: 1px solid rgba(29, 78, 216, 0.2);
+}
+
+.project-card__year {
+  font-size: 12px;
+  color: var(--muted);
+}
+
 .pill-list {
   list-style: none;
   padding: 0;
@@ -743,10 +793,9 @@ a {
   }
 
   .nav {
-    position: static;
+    position: relative;
     align-items: center;
     gap: 10px;
-    position: relative;
   }
 
   .nav__toggle {

@@ -75,42 +75,56 @@ export const experiences = [
 export const projects = [
   {
     title: "AI-Enabled Internal CRM & Decision Support (M&A)",
+    type: "Product",
+    year: "2025",
     stack: ["FastAPI", "React/TS", "PostgreSQL", "GCP"],
     detail:
       "Structured capture -> review -> decision-trace workflows with AI-assisted insights, RBAC, and audit logging.",
   },
   {
     title: "LLM-Assisted Data Ingestion & Normalization Pipeline",
+    type: "Product",
+    year: "2025",
     stack: ["Python", "Pydantic", "Async", "LLM", "GCP"],
     detail:
       "Multi-source ETL with caching via Firestore; deployed as scheduled cloud jobs for daily refresh.",
   },
   {
     title: "Persian Text Sentiment Analysis (Digikala Reviews)",
+    type: "Research",
+    year: "2024",
     stack: ["PyTorch", "Transformers", "NLP"],
     detail:
       "End-to-end pipeline on 67K+ reviews; preprocessing, tokenization, model training, and error analysis.",
   },
   {
     title: "Time-Series Forecasting - Tehran Stock Exchange",
+    type: "Research",
+    year: "2024",
     stack: ["Python", "RNN"],
     detail:
       "Designed, trained, and evaluated RNNs for temporal forecasting with normalization and sequence generation.",
   },
   {
     title: "Blind Source Separation (Audio & Image) - VAE",
+    type: "Research",
+    year: "2023",
     stack: ["PyTorch", "VAE"],
     detail:
       "Learned latent representations to separate mixed audio/image signals.",
   },
   {
     title: "Hair Salon Reservation & Portfolio Platform",
+    type: "Product",
+    year: "2023",
     stack: ["Node.js", "React/TS", "MySQL", "LangGraph"],
     detail:
       "Booking and portfolio dashboards; multimodal AI assistant for consultations.",
   },
   {
     title: "Intelligent Book Exchange Social Platform",
+    type: "Product",
+    year: "2022",
     stack: ["Node.js", "Python", "Graph DB"],
     detail:
       "Graph-based models and hybrid recommendations using NLP-driven sentiment signals.",

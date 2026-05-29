@@ -22,6 +22,10 @@ export function ProjectGrid() {
               }
             }}
           >
+            <div className="project-card__meta">
+              <span className="project-card__type">{p.type}</span>
+              <span className="project-card__year">{p.year}</span>
+            </div>
             <h3>{p.title}</h3>
             <p className="muted">{p.detail}</p>
             <div className="tags">

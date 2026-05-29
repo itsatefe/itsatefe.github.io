@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { profile } from "./data/profile";
 import { HomePage } from "./pages/HomePage";
 import { ExperiencePage } from "./pages/ExperiencePage";
@@ -30,24 +30,24 @@ export default function App() {
           <span />
         </button>
         <div className={`nav__links ${menuOpen ? "nav__links--open" : ""}`}>
-          <Link to="/" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/" end onClick={() => setMenuOpen(false)}>
             Home
-          </Link>
-          <Link to="/experience" onClick={() => setMenuOpen(false)}>
+          </NavLink>
+          <NavLink to="/experience" onClick={() => setMenuOpen(false)}>
             Experience
-          </Link>
-          <Link to="/education" onClick={() => setMenuOpen(false)}>
+          </NavLink>
+          <NavLink to="/education" onClick={() => setMenuOpen(false)}>
             Education
-          </Link>
-          <Link to="/projects" onClick={() => setMenuOpen(false)}>
+          </NavLink>
+          <NavLink to="/projects" onClick={() => setMenuOpen(false)}>
             Projects
-          </Link>
-          <Link to="/skills" onClick={() => setMenuOpen(false)}>
+          </NavLink>
+          <NavLink to="/skills" onClick={() => setMenuOpen(false)}>
             Skills
-          </Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+          </NavLink>
+          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
-          </Link>
+          </NavLink>
         </div>
       </nav>
 

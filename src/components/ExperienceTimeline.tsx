@@ -30,6 +30,13 @@ export function ExperienceTimeline() {
                 </div>
                 <h3>{exp.role}</h3>
                 <p className="muted">{exp.company}</p>
+                <p className="timeline__company-location">{exp.companyLocation}</p>
+                {exp.website && (
+                  <a href={exp.website} target="_blank" rel="noreferrer" className="website-field">
+                    <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    {new URL(exp.website).hostname.replace(/^www\./, "")}
+                  </a>
+                )}
                 <p className="timeline__brief">{exp.brief}</p>
               </div>
               <div className="timeline__keywords">
@@ -56,6 +63,13 @@ export function ExperienceTimeline() {
                 <p className="eyebrow">{active.period}</p>
                 <h3>{active.role}</h3>
                 <p className="muted">{active.company}</p>
+                <p className="timeline__company-location">{active.companyLocation}</p>
+                {active.website && (
+                  <a href={active.website} target="_blank" rel="noreferrer" className="website-field">
+                    <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    {new URL(active.website).hostname.replace(/^www\./, "")}
+                  </a>
+                )}
               </div>
               <button
                 type="button"

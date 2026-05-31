@@ -36,11 +36,11 @@ export default function App() {
           <NavLink to="/experience" onClick={() => setMenuOpen(false)}>
             Experience
           </NavLink>
-          <NavLink to="/education" onClick={() => setMenuOpen(false)}>
-            Education
-          </NavLink>
           <NavLink to="/projects" onClick={() => setMenuOpen(false)}>
             Projects
+          </NavLink>
+          <NavLink to="/education" onClick={() => setMenuOpen(false)}>
+            Education
           </NavLink>
           <NavLink to="/skills" onClick={() => setMenuOpen(false)}>
             Skills
@@ -70,8 +70,8 @@ export default function App() {
           <nav className="footer__nav">
             <Link to="/">Home</Link>
             <Link to="/experience">Experience</Link>
-            <Link to="/education">Education</Link>
             <Link to="/projects">Projects</Link>
+            <Link to="/education">Education</Link>
             <Link to="/skills">Skills</Link>
             <Link to="/contact">Contact</Link>
           </nav>

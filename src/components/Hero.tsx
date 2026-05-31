@@ -11,7 +11,7 @@ export function Hero() {
           <img src={portrait} alt={`${profile.name} portrait`} />
         </div>
         <div className="hero__text">
-          <p className="eyebrow">AI Backend Developer</p>
+          <p className="eyebrow">AI Engineer</p>
           <h1>{profile.name}</h1>
           <div className="hero__lede">
             {splitParagraphs(profile.summary).map((paragraph) => (
@@ -20,8 +20,8 @@ export function Hero() {
           </div>
           <div className="hero__chips">
             <span>{profile.location}</span>
-            <span>Cloud-native ML and APIs</span>
-            <span>3+ yrs experience</span>
+            <span>LLM pipelines · production systems</span>
+            <span>~80% ops reduction at ShortPartners</span>
           </div>
           <div className="hero__cta">
             <Link className="btn primary" to="/contact">

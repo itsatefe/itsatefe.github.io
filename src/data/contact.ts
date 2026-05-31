@@ -32,9 +32,9 @@ export const contactContent: ContactContent = {
   headline: "Contact",
   card: {
     eyebrow: "Reach out",
-    title: "Let's build something reliable.",
+    title: "Let's build something that actually moves the needle.",
     body:
-      "Open to AI backend roles, ML pipelines, and platform work. I respond quickly to clear project scopes and collaboration requests.",
+      "Open to roles where AI has a real business problem to solve. I respond quickly to clear scopes and direct conversations.",
   },
   actions: [
     {
@@ -73,14 +73,14 @@ export const contactContent: ContactContent = {
     },
     {
       label: "Focus",
-      value: "AI backend, data pipelines, LLM integrations",
+      value: "Applied AI · turning data into decisions",
     },
   ],
   availabilityHeading: "Availability",
   availability: [
     {
       label: "Timezone",
-      value: "GMT+4 (Armenia)",
+      value: "GMT+4 · Yerevan, Armenia",
     },
     {
       label: "Response time",

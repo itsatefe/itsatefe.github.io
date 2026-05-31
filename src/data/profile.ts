@@ -1,17 +1,13 @@
 export const profile = {
   name: "Atefe Rajabi",
-  title: "AI Backend Developer",
-  location: "Yerevan, Armenia",
+  title: "AI Engineer · LLM Systems & Applied Analytics",
+  location: "Yerevan, Armenia · Open to Relocation",
   email: "atefe.rajabi.78@gmail.com",
   github: "https://github.com/itsatefe",
   linkedin: "https://linkedin.com/in/atefe-rajabi78",
-  summary: `I build AI-driven systems that translate ideas into usable products. I'm motivated by creating tools that improve decision-making and reduce unnecessary complexity.
+  summary: `My work spans LLM pipelines, backend APIs, data systems, and production deployment on GCP. I gravitate toward problems where the output directly changes what someone decides or does next.
 
-I adapt quickly to new technologies and enjoy learning by building. I'm comfortable working in evolving environments where experimentation and iteration are part of the process. I approach problems analytically and creatively, and I stay persistent until I understand the root cause, especially when debugging complex systems.
-
-I'm particularly interested in product-focused teams that integrate AI into meaningful applications rather than treating technology as an end in itself.
-
-Beyond my work, I'm curious about different cultures and perspectives. Learning languages and engaging with international environments has always been important to me, both personally and professionally.`,
+  At ShortPartners I automated an investment opportunity review process that previously required significant manual effort — the system now handles sourcing, scoring, and pipeline management end-to-end, reducing that workload by ~80%. At Mithra-AI I built an LLM pipeline that mines agent conversation history to surface procurement cost optimization opportunities the platform wasn't yet addressing. Earlier, at TebOnco, query optimization and caching changes I made to a production healthcare API improved system performance by 40%.`,
 };
 
 export const experiences = [

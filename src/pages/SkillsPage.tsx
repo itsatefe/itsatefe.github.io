@@ -5,7 +5,7 @@ export function SkillsPage() {
   return (
     <main className="layout">
       <div className="layout__main">
-        <SectionShell headline="Skills" eyebrow="Core Strengths">
+        <SectionShell headline="Skills">
           <SkillsCloud />
         </SectionShell>
       </div>

@@ -2,16 +2,7 @@ import { SectionShell } from "../components/SectionShell";
 import { contactContent } from "../data/contact";
 
 export function ContactPage() {
-  const {
-    sectionId,
-    headline,
-    card,
-    actions,
-    detailsHeading,
-    details,
-    availabilityHeading,
-    availability,
-  } = contactContent;
+  const { sectionId, headline, card, actions, details, availability } = contactContent;
 
   return (
     <main className="layout">
@@ -19,7 +10,6 @@ export function ContactPage() {
         <SectionShell headline={headline} id={sectionId}>
           <div className="contact-page">
             <div className="contact-page__card card">
-              <p className="eyebrow">{card.eyebrow}</p>
               <h2 className="contact-page__title">{card.title}</h2>
               <p className="muted">{card.body}</p>
               <div className="contact-page__actions">
@@ -44,7 +34,6 @@ export function ContactPage() {
 
             <div className="contact-page__grid">
               <div className="card">
-                <p className="eyebrow">{detailsHeading}</p>
                 <ul className="contact-page__list">
                   {details.map((item) => (
                     <li key={item.label}>
@@ -56,7 +45,6 @@ export function ContactPage() {
               </div>
 
               <div className="card">
-                <p className="eyebrow">{availabilityHeading}</p>
                 <ul className="contact-page__list">
                   {availability.map((item) => (
                     <li key={item.label}>

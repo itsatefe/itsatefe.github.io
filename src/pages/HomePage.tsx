@@ -19,7 +19,6 @@ export function HomePage() {
             <img src={portrait} alt={`${profile.name} portrait`} />
           </div>
           <div className="home__personal">
-            <p className="eyebrow">Profile</p>
             <h1>{profile.name}</h1>
             <p className="muted">{profile.title}</p>
             <span className="badge-available">Open to new roles</span>
@@ -47,7 +46,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <SectionShell id="overview" headline="Overview" eyebrow="About">
+      <SectionShell id="overview" headline="Overview">
         <div className="overview">
           <div className="overview__copy">
             <div className="overview__lede">

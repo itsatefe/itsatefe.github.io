@@ -549,47 +549,36 @@ a {
   color: #1e3a8a;
 }
 
-.skill-blocks {
+.skills-grid {
   display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
-.skills-sidebar {
-  display: grid;
-  gap: 14px;
-}
-
-.skill-panel {
+.skill-card {
+  padding: 16px 18px;
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 14px;
   background: var(--card);
   box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
+  transition: transform 140ms ease, border 140ms ease;
 }
 
-.skill-panel__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 10px;
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(29, 78, 216, 0.45);
+  background: rgba(29, 78, 216, 0.04);
 }
 
-.skill-panel__toggle {
-  border: 1px solid var(--border);
-  background: rgba(15, 23, 42, 0.04);
+.skill-card__title {
+  margin: 0 0 10px;
+}
+
+.skill-card .pill {
+  background: transparent;
+  border-color: rgba(29, 78, 216, 0.45);
   color: var(--text);
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 6px 12px;
-  cursor: pointer;
-  transition: background 160ms ease, border 160ms ease;
-}
-
-.skill-panel__toggle:hover {
-  background: rgba(29, 78, 216, 0.08);
-  border-color: rgba(29, 78, 216, 0.35);
+  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.12);
 }
 
 .contact {
@@ -864,7 +853,17 @@ a {
     padding-left: 0;
   }
 
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .page {
     padding: 16px 16px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }

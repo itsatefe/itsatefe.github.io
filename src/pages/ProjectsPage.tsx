@@ -5,7 +5,7 @@ export function ProjectsPage() {
   return (
     <main className="layout">
       <div className="layout__main">
-        <SectionShell headline="Projects" eyebrow="Selected Work">
+        <SectionShell headline="Projects">
           <ProjectGrid />
         </SectionShell>
       </div>

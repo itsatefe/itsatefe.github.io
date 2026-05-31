@@ -5,7 +5,7 @@ export function ExperiencePage() {
   return (
     <main className="layout">
       <div className="layout__main">
-        <SectionShell headline="Experience" eyebrow="Career">
+        <SectionShell headline="Experience">
           <ExperienceTimeline />
         </SectionShell>
       </div>

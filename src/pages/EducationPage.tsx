@@ -5,7 +5,7 @@ export function EducationPage() {
   return (
     <main className="layout">
       <div className="layout__main">
-        <SectionShell headline="Education" eyebrow="Academics">
+        <SectionShell headline="Education">
           <EducationList />
         </SectionShell>
       </div>

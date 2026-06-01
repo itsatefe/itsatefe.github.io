@@ -1,7 +1,7 @@
 export const profile = {
   name: "Atefe Rajabi",
   title: "AI Engineer · LLM Systems & Applied Analytics",
-  location: "Yerevan, Armenia · Open to Relocation",
+  location: "Yerevan, Armenia",
   email: "atefe.rajabi.78@gmail.com",
   github: "https://github.com/itsatefe",
   linkedin: "https://linkedin.com/in/atefe-rajabi78",

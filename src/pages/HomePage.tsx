@@ -21,7 +21,6 @@ export function HomePage() {
           <div className="home__personal">
             <h1>{profile.name}</h1>
             <p className="muted">{profile.title}</p>
-            <span className="badge-available">Open to new roles</span>
             <div className="home__meta">
               <span>{profile.location}</span>
               <span>{profile.email}</span>

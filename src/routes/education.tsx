@@ -41,7 +41,7 @@ function EducationPage() {
         {education.map((b) => (
           <article
             key={b.degree}
-            className="grid grid-cols-1 gap-8 rounded-3xl border border-line/70 bg-white/70 p-8 backdrop-blur-sm md:grid-cols-12"
+            className="grid grid-cols-1 gap-8 rounded-3xl border border-line/70 bg-white/70 p-8 shadow-[0_1px_0_rgba(15,23,42,0.03)] backdrop-blur-sm transition-shadow hover:shadow-xl md:grid-cols-12"
           >
             <div className="md:col-span-4">
               <p className="font-display text-[11px] font-bold uppercase tracking-[0.2em] text-primary">

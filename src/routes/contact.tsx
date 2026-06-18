@@ -44,7 +44,7 @@ function ContactPage() {
 
       <section className="grid grid-cols-1 gap-10 lg:grid-cols-12">
         <div className="lg:col-span-7">
-          <div className="rounded-3xl border border-line/70 bg-white/70 p-8 backdrop-blur-sm">
+          <div className="rounded-3xl border border-line/70 bg-white/70 p-8 shadow-[0_1px_0_rgba(15,23,42,0.03)] backdrop-blur-sm transition-shadow hover:shadow-xl">
             <SectionEyebrow>Start here</SectionEyebrow>
             <div className="mt-6 flex flex-wrap gap-3">
               {contactActions.map((a) => (

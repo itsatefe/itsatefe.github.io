@@ -42,7 +42,7 @@ function SkillsPage() {
         {skills.map((g) => (
           <section
             key={g.label}
-            className="rounded-3xl border border-line/70 bg-white/70 p-7 backdrop-blur-sm"
+            className="rounded-3xl border border-line/70 bg-white/70 p-7 shadow-[0_1px_0_rgba(15,23,42,0.03)] backdrop-blur-sm transition-shadow hover:shadow-xl"
           >
             <SectionEyebrow>{g.label}</SectionEyebrow>
             <ul className="mt-5 flex flex-wrap gap-2">

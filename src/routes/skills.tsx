@@ -18,7 +18,7 @@ const GROUP_META: Record<
   "Agentic AI & LLM": {
     icon: Brain,
     description:
-      "Build intelligent agents with LLMs, tools, and memory using LangGraph, Google ADK, and RAG pipelines.",
+      "Build intelligent agents with LLMs, tools, and memory using LangGraph and Google ADK — with CI evaluation pipelines via deepeval and Latitude.",
     proficiency: 92,
   },
   Programming: {

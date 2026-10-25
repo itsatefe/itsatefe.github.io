@@ -21,7 +21,7 @@ export const identity = {
 export const story: string[] = [
   "My work spans agentic AI on Google ADK, RAG pipelines with source-cited outputs, FastAPI services, and production deployment on GCP. I gravitate toward problems where the output directly changes what someone decides or does next.",
   "At ShortPartners I owned an AI-enabled M&A CRM as sole developer — covering the full deal lifecycle from sourcing and screening to due diligence and decision support — including a RAG-based document Q&A system where every answer links back to its source. That ownership cut manual review effort by ~80%.",
-  "At Mithra-AI I build LLM agents on Google ADK within a single-tenant, multi-customer architecture, with Langfuse evaluation and OpenTelemetry tracing for production monitoring. Earlier, at TebOnco, I cut healthcare API latency 40% through query tuning, indexing, and caching.",
+  "At Mithra-AI I build LLM agents on Google ADK within a single-tenant, multi-customer architecture, with CI evaluation pipelines using OpenTelemetry for production observability. Earlier, at TebOnco, I cut healthcare API latency 40% through query tuning, indexing, and caching.",
 ];
 
 // ─── Experience ───────────────────────────────────────────────────────────────
@@ -50,11 +50,12 @@ export const roles: Role[] = [
       "Building LLM agents on Google ADK for enterprise procurement analytics, with evaluation, observability, and data-quality safeguards.",
     bullets: [
       "Build LLM agents on Google ADK with a single-tenant multi-customer architecture for full data isolation and client data privacy.",
-      "Evaluate agent response quality and manage prompt versioning in Langfuse, with native OpenTelemetry tracing to Google Cloud for production monitoring.",
+      "Built CI pipelines for LLM agent evaluation and observability using Google Cloud Build, Google ADK, and OpenTelemetry.",
       "Design a structured analytics layer over agent interactions to track failure modes and surface new use cases.",
       "Develop an MCP connector and a Streamlit observability dashboard for real-time agent monitoring; partner with non-technical stakeholders to translate business needs into AI features.",
+      "Embedded Apache Superset dashboards into the product UI; built agent-driven workflows to auto-generate and configure analytics views via Superset's MCP connector.",
     ],
-    stack: ["Google ADK", "FastAPI", "GCP", "PostgreSQL", "Langfuse", "MCP", "Streamlit"],
+    stack: ["Google ADK", "FastAPI", "GCP", "PostgreSQL", "Langfuse", "MCP", "Streamlit", "Apache Superset"],
   },
   {
     period: "Sep 2025 – Feb 2026",
@@ -272,7 +273,7 @@ export type SkillGroup = { label: string; items: string[] };
 export const skills: SkillGroup[] = [
   {
     label: "Agentic AI & LLM",
-    items: ["LangGraph", "Google ADK", "RAG Pipelines", "Prompt Engineering", "Langfuse", "MCP Design"],
+    items: ["LangGraph", "Google ADK", "RAG Pipelines", "Prompt Engineering", "Langfuse", "Deepeval", "Latitude", "OpenUI", "MCP Design"],
   },
   {
     label: "Programming",

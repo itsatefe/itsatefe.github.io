@@ -50,3 +50,26 @@ export function useGitHubUser() {
     staleTime: 1000 * 60 * 15,
   });
 }
+
+export type Contribution = {
+  date: string;
+  count: number;
+  level: 0 | 1 | 2 | 3 | 4;
+};
+
+async function fetchContributions(): Promise<Contribution[]> {
+  const res = await fetch(
+    `https://github-contributions-api.jogruber.de/v4/${USERNAME}?y=last`,
+  );
+  if (!res.ok) throw new Error("GitHub contributions API error");
+  const data = await res.json();
+  return data.contributions as Contribution[];
+}
+
+export function useGitHubContributions() {
+  return useQuery({
+    queryKey: ["github-contributions"],
+    queryFn: fetchContributions,
+    staleTime: 1000 * 60 * 30,
+  });
+}

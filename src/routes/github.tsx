@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, SectionEyebrow } from "@/components/PageShell";
-import { useGitHubRepos, useGitHubUser, useGitHubContributions, type GitHubRepo } from "@/hooks/use-github";
+import { useGitHubRepos, useGitHubUser, type GitHubRepo } from "@/hooks/use-github";
 import { ContributionCalendar } from "@/components/ContributionCalendar";
 import { Star, GitFork, Clock } from "lucide-react";
 
@@ -128,7 +128,6 @@ function SkeletonCard() {
 function GitHubPage() {
   const repos = useGitHubRepos();
   const user = useGitHubUser();
-  const contributions = useGitHubContributions();
 
   const ownRepos = repos.data?.filter((r) => !r.fork) ?? [];
 
@@ -181,11 +180,9 @@ function GitHubPage() {
       </section>
 
       {/* ── contribution calendar ── */}
-      {contributions.data && contributions.data.length > 0 && (
-        <section className="mb-12">
-          <ContributionCalendar contributions={contributions.data} />
-        </section>
-      )}
+      <section className="mb-12">
+        <ContributionCalendar />
+      </section>
 
       {/* ── repo grid ── */}
       <section>

@@ -57,19 +57,19 @@ export type Contribution = {
   level: 0 | 1 | 2 | 3 | 4;
 };
 
-async function fetchContributions(): Promise<Contribution[]> {
+async function fetchContributions(year: number | "last"): Promise<Contribution[]> {
   const res = await fetch(
-    `https://github-contributions-api.jogruber.de/v4/${USERNAME}?y=last`,
+    `https://github-contributions-api.jogruber.de/v4/${USERNAME}?y=${year}`,
   );
   if (!res.ok) throw new Error("GitHub contributions API error");
   const data = await res.json();
   return data.contributions as Contribution[];
 }
 
-export function useGitHubContributions() {
+export function useGitHubContributions(year: number | "last") {
   return useQuery({
-    queryKey: ["github-contributions"],
-    queryFn: fetchContributions,
+    queryKey: ["github-contributions", year],
+    queryFn: () => fetchContributions(year),
     staleTime: 1000 * 60 * 30,
   });
 }

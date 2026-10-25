@@ -248,7 +248,7 @@ export const projects: Project[] = [
     stack: ["PyTorch", "VAE"],
   },
   {
-    year: "2023",
+    year: "2024",
     kind: "Product",
     title: "Hair Salon Reservation & Portfolio Platform",
     blurb:

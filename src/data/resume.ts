@@ -92,7 +92,7 @@ export const roles: Role[] = [
     stack: ["PyTorch", "GCNs", "VAE", "RNN/LSTM", "Causal AI"],
   },
   {
-    period: "Jun 2021 – Sep 2023",
+    period: "2021 – 2025",
     location: "Remote",
     title: "Freelance AI & Software Developer",
     company: "Independent",

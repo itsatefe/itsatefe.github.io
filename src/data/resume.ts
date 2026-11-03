@@ -21,7 +21,7 @@ export const identity = {
 export const story: string[] = [
   "My work spans agentic AI on Google ADK, RAG pipelines with source-cited outputs, FastAPI services, and production deployment on GCP. I gravitate toward problems where the output directly changes what someone decides or does next.",
   "At ShortPartners I owned an AI-enabled M&A CRM as sole developer — covering the full deal lifecycle from sourcing and screening to due diligence and decision support — including a RAG-based document Q&A system where every answer links back to its source. That ownership cut manual review effort by ~80%.",
-  "At Mithra-AI I build LLM agents on Google ADK within a single-tenant, multi-customer architecture, with CI evaluation pipelines using OpenTelemetry for production observability. Earlier, at TebOnco, I cut healthcare API latency 40% through query tuning, indexing, and caching.",
+  "At Mithra-AI I develop AI-powered procurement analytics features on Google ADK — building reusable agent skills, integrating evaluations into Cloud Build CI pipelines, and improving agent resilience with fallbacks and safeguards. Earlier, at TebOnco, I cut healthcare API latency 40% through query tuning, indexing, and caching.",
 ];
 
 // ─── Experience ───────────────────────────────────────────────────────────────
@@ -47,15 +47,16 @@ export const roles: Role[] = [
     place: "Amsterdam, Netherlands · B2B Procurement Analytics",
     link: { href: "https://www.mithra-ai.com/", label: "mithra-ai.com" },
     summary:
-      "Building LLM agents on Google ADK for enterprise procurement analytics, with evaluation, observability, and data-quality safeguards.",
+      "Developing AI-powered procurement analytics features to help B2B clients identify cost optimization opportunities.",
     bullets: [
-      "Build LLM agents on Google ADK with a single-tenant multi-customer architecture for full data isolation and client data privacy.",
-      "Built CI pipelines for LLM agent evaluation and observability using Google Cloud Build, Google ADK, and OpenTelemetry.",
-      "Design a structured analytics layer over agent interactions to track failure modes and surface new use cases.",
-      "Develop an MCP connector and a Streamlit observability dashboard for real-time agent monitoring; partner with non-technical stakeholders to translate business needs into AI features.",
-      "Embedded Apache Superset dashboards into the product UI; built agent-driven workflows to auto-generate and configure analytics views via Superset's MCP connector.",
+      "Contributed to Google ADK agents and built reusable skills for supplier matching, material searches, and category analysis.",
+      "Integrated Google ADK evaluations into Cloud Build CI pipelines to detect response errors, security issues, and regressions before release.",
+      "Developed conversation analytics to identify recurring failures, unmet customer needs, and new feature opportunities.",
+      "Built an MCP connector and Streamlit dashboard to simplify agent monitoring and troubleshooting across customer environments.",
+      "Contributed to conversational dashboard creation through Superset MCP integration, including automated chart verification.",
+      "Improved agent resilience through model fallbacks, retries, timeouts, and input safeguards.",
     ],
-    stack: ["Google ADK", "FastAPI", "GCP", "PostgreSQL", "Langfuse", "MCP", "Streamlit", "Apache Superset"],
+    stack: ["Google ADK", "FastAPI", "GCP", "PostgreSQL", "Langfuse", "MCP", "Streamlit", "Apache Superset", "Cloud Build"],
   },
   {
     period: "Sep 2025 – Feb 2026",
